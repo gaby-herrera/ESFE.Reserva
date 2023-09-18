@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\ESFE.Reserva.UI.props" />
+</Project>
