@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ESFE.Reserva.EN;
 
-public partial class ReservaEN
+public partial class Reserva
 {
     public int IdReserva { get; set; }
 

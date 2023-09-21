@@ -17,5 +17,5 @@ public partial class Cliente
 
     public string Dui { get; set; } = null!;
 
-    public virtual ICollection<ReservaEN> Reservas { get; set; } = new List<ReservaEN>();
+    public virtual ICollection<Reserva> Reservas { get; set; } = new List<Reserva>();
 }

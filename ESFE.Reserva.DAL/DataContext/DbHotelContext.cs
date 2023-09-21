@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using ESFE.Reserva.EN;
 
-namespace ESFE.Reserva.DAL;
+namespace ESFE.Reserva.DAL.DataContext;
 
 public partial class DbHotelContext : DbContext
 {
@@ -24,13 +24,14 @@ public partial class DbHotelContext : DbContext
 
     public virtual DbSet<Habitacion> Habitacions { get; set; }
 
-    public virtual DbSet<ReservaEN> Reservas { get; set; }
+    public virtual DbSet<EN.Reserva> Reservas { get; set; }
 
     public virtual DbSet<Tarifa> Tarifas { get; set; }
 
     public virtual DbSet<Temporadum> Temporada { get; set; }
 
     public virtual DbSet<TipoHabitacion> TipoHabitacions { get; set; }
+    public object Reserva { get; internal set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -100,7 +101,7 @@ public partial class DbHotelContext : DbContext
                 .HasConstraintName("FK__Habitacio__IdTip__45F365D3");
         });
 
-        modelBuilder.Entity<ReservaEN>(entity =>
+        modelBuilder.Entity<EN.Reserva>(entity =>
         {
             entity.HasKey(e => e.IdReserva).HasName("PK__Reserva__0E49C69D658D3B39");
 
