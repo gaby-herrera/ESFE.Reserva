@@ -1,8 +1,20 @@
+using Microsoft.EntityFrameworkCore;
+using ESFE.Reserva.DAL.DataContext;
+using ESFE.Reserva.DAL.Repositories;
+using ESFE.Reserva.EN;
+using ESFE.Reserva.BL.Service;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<DbHotelContext>(opciones =>
+{
+    opciones.UseSqlServer(builder.Configuration.GetConnectionString("DbHotelContext"));
+});
 
+builder.Services.AddScoped<IGenericRepository<Reserva>, ReservaRepository>();
+builder.Services.AddScoped<IReservaService, ReservaService>();
 
 var app = builder.Build();
 
