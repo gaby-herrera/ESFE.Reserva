@@ -50,7 +50,8 @@ CREATE TABLE [Habitacion] (
   [IdHabitacion] INT PRIMARY KEY NOT NULL IDENTITY(1, 1),
   [NumeroHabitacion] SMALLINT NOT NULL,
   [IdTipoHabitacion] INT NOT NULL,
-  [IdEstadoH] INT NOT NULL
+  [IdEstadoH] INT NOT NULL,
+  [Img] JSON
 )
 GO
 

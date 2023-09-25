@@ -9,6 +9,8 @@ public partial class TipoHabitacion
 
     public string Nombre { get; set; } = null!;
 
+    public string? Imgs { get; set; }
+
     public virtual ICollection<Habitacion> Habitacions { get; set; } = new List<Habitacion>();
 
     public virtual ICollection<Tarifa> Tarifas { get; set; } = new List<Tarifa>();

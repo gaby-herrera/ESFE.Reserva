@@ -1,0 +1,36 @@
+﻿<h1>Habitaciones</h1>
+<main id="contenedor-habitaciones">
+
+
+
+</main>
+
+@section scripts {
+    <script>
+        const contenedor = document.getElementById("contenedor-habitaciones")
+
+      async function cargarData(){
+            const data = await fetch("Habitaciones/Lista")
+            const json = await data.json()
+            return json
+      }
+
+      async function CargarHabitaciones(){
+          const habitaciones = await cargarData();
+          console.log(habitaciones)
+
+          habitaciones.forEach( h => {
+              contenedor.innerHTML += `
+              <div >
+
+                    <h2>ejemplo</h2>
+                    <img src="#" alt=""/>
+              </div>
+              `
+          })
+      }
+
+        CargarHabitaciones()
+        console.log("AAA")
+    </script>
+}

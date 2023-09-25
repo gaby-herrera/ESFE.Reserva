@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using ESFE.Reserva.EN;
 
+
 namespace ESFE.Reserva.DAL.DataContext;
 
 public partial class DbHotelContext : DbContext
@@ -31,12 +32,11 @@ public partial class DbHotelContext : DbContext
     public virtual DbSet<Temporadum> Temporada { get; set; }
 
     public virtual DbSet<TipoHabitacion> TipoHabitacions { get; set; }
-    public object Reserva { get; internal set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+        => optionsBuilder.UseSqlServer("Server=localhost;DataBase=DbHotel;Integrated Security=true;Encrypt=false");
 
-    }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Cliente>(entity =>
@@ -168,6 +168,7 @@ public partial class DbHotelContext : DbContext
 
             entity.ToTable("TipoHabitacion");
 
+            entity.Property(e => e.Imgs).IsUnicode(false);
             entity.Property(e => e.Nombre)
                 .HasMaxLength(50)
                 .IsUnicode(false);
