@@ -14,7 +14,9 @@ builder.Services.AddDbContext<DbHotelContext>(opciones =>
 });
 
 builder.Services.AddScoped<IGenericRepository<Reserva>, ReservaRepository>();
+builder.Services.AddScoped<IGenericRepository<TipoHabitacion>, TipoHabitacionRepository>();
 builder.Services.AddScoped<IReservaService, ReservaService>();
+builder.Services.AddScoped<ITipoHabitacionService, TipoHabitacionService>();
 
 var app = builder.Build();
 

@@ -11,11 +11,10 @@ namespace ESFE.Reserva.DAL.Repositories
     public class ReservaRepository : IGenericRepository<EN.Reserva>
     {
         public readonly DbHotelContext _dbcontext;
-        private Task<IQueryable<EN.Reserva>> queryReservaSQL;
 
         public ReservaRepository(DbHotelContext context)
         {
-            _dbcontext = context;   
+            _dbcontext = context;
         }
 
         public async Task<bool> Actualizar(EN.Reserva modelo)
@@ -26,9 +25,9 @@ namespace ESFE.Reserva.DAL.Repositories
 
         }
 
-         public async Task<bool> Eliminar(int id)
+        public async Task<bool> Eliminar(int id)
         {
-            EN.Reserva modelo =_dbcontext.Reservas.First(c => c.IdReserva == id);
+            EN.Reserva modelo = _dbcontext.Reservas.First(c => c.IdReserva == id);
             _dbcontext.Reservas.Remove(modelo);
             await _dbcontext.SaveChangesAsync();
             return true;
@@ -46,15 +45,11 @@ namespace ESFE.Reserva.DAL.Repositories
             return await _dbcontext.Reservas.FindAsync(id);
         }
 
-        public Task<IQueryable<EN.Reserva>> ObtenerTodos()
+        public async Task<IQueryable<EN.Reserva>> ObtenerTodos()
         {
-            IQueryable<EN.Reserva> IqueryReservaSQL =_dbcontext.Reservas;
-            return queryReservaSQL;
+            IQueryable<EN.Reserva> IqueryReservaSQL = _dbcontext.Reservas;
+            return IqueryReservaSQL;
         }
 
-        Task<bool> IGenericRepository<EN.Reserva>.Eliminar(int id)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

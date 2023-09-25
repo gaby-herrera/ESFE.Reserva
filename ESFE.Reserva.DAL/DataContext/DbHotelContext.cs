@@ -8,6 +8,8 @@ namespace ESFE.Reserva.DAL.DataContext;
 
 public partial class DbHotelContext : DbContext
 {
+    internal object Cliente;
+
     public DbHotelContext()
     {
     }
@@ -23,7 +25,7 @@ public partial class DbHotelContext : DbContext
 
     public virtual DbSet<EstadoR> EstadoRs { get; set; }
 
-    public virtual DbSet<Habitacion> Habitacions { get; set; }
+    public virtual DbSet<EN.Habitacion> Habitacions { get; set; }
 
     public virtual DbSet<EN.Reserva> Reservas { get; set; }
 
@@ -84,7 +86,7 @@ public partial class DbHotelContext : DbContext
                 .IsUnicode(false);
         });
 
-        modelBuilder.Entity<Habitacion>(entity =>
+        modelBuilder.Entity<EN.Habitacion>(entity =>
         {
             entity.HasKey(e => e.IdHabitacion).HasName("PK__Habitaci__8BBBF90152DA0553");
 
