@@ -1,4 +1,5 @@
 C:\Users\MINEDUCYT\Desktop\proyectos\ESFE.Reserva\ESFE.Reserva.EN\bin\Debug\net6.0\ESFE.Reserva.EN.deps.json
+C:\Users\MINEDUCYT\Desktop\proyectos\ESFE.Reserva\ESFE.Reserva.EN\bin\Debug\net6.0\ESFE.Reserva.EN.runtimeconfig.json
 C:\Users\MINEDUCYT\Desktop\proyectos\ESFE.Reserva\ESFE.Reserva.EN\bin\Debug\net6.0\ESFE.Reserva.EN.dll
 C:\Users\MINEDUCYT\Desktop\proyectos\ESFE.Reserva\ESFE.Reserva.EN\bin\Debug\net6.0\ESFE.Reserva.EN.pdb
 C:\Users\MINEDUCYT\Desktop\proyectos\ESFE.Reserva\ESFE.Reserva.EN\obj\Debug\net6.0\ESFE.Reserva.EN.csproj.AssemblyReference.cache
@@ -9,6 +10,5 @@ C:\Users\MINEDUCYT\Desktop\proyectos\ESFE.Reserva\ESFE.Reserva.EN\obj\Debug\net6
 C:\Users\MINEDUCYT\Desktop\proyectos\ESFE.Reserva\ESFE.Reserva.EN\obj\Debug\net6.0\ESFE.Reserva.EN.dll
 C:\Users\MINEDUCYT\Desktop\proyectos\ESFE.Reserva\ESFE.Reserva.EN\obj\Debug\net6.0\refint\ESFE.Reserva.EN.dll
 C:\Users\MINEDUCYT\Desktop\proyectos\ESFE.Reserva\ESFE.Reserva.EN\obj\Debug\net6.0\ESFE.Reserva.EN.pdb
-C:\Users\MINEDUCYT\Desktop\proyectos\ESFE.Reserva\ESFE.Reserva.EN\obj\Debug\net6.0\ref\ESFE.Reserva.EN.dll
-C:\Users\MINEDUCYT\Desktop\proyectos\ESFE.Reserva\ESFE.Reserva.EN\bin\Debug\net6.0\ESFE.Reserva.EN.runtimeconfig.json
 C:\Users\MINEDUCYT\Desktop\proyectos\ESFE.Reserva\ESFE.Reserva.EN\obj\Debug\net6.0\ESFE.Reserva.EN.genruntimeconfig.cache
+C:\Users\MINEDUCYT\Desktop\proyectos\ESFE.Reserva\ESFE.Reserva.EN\obj\Debug\net6.0\ref\ESFE.Reserva.EN.dll
