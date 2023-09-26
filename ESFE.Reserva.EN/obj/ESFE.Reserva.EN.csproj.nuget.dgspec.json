@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.EN\\ESFE.Reserva.EN.csproj": {}
+    "C:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.EN\\ESFE.Reserva.EN.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.EN\\ESFE.Reserva.EN.csproj": {
+    "C:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.EN\\ESFE.Reserva.EN.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.EN\\ESFE.Reserva.EN.csproj",
+        "projectUniqueName": "C:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.EN\\ESFE.Reserva.EN.csproj",
         "projectName": "ESFE.Reserva.EN",
-        "projectPath": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.EN\\ESFE.Reserva.EN.csproj",
-        "packagesPath": "C:\\Users\\MINEDUCYT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.EN\\obj\\",
+        "projectPath": "C:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.EN\\ESFE.Reserva.EN.csproj",
+        "packagesPath": "C:\\Users\\joanz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.EN\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MINEDUCYT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\joanz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }
