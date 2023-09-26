@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3U3NiB4deVpEHBMiv7HZHkUyqWck0a7B+qRACSerXRk=",
+  "Hash": "nCvLzqKfeJPMlOp7wUAKtCXdVL3VFL4qbf4PCN3X4Bc=",
   "Source": "ESFE.Reserva.UI",
   "BasePath": "_content/ESFE.Reserva.UI",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\img\\Hotel.jpg",
+      "SourceId": "ESFE.Reserva.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\",
+      "BasePath": "_content/ESFE.Reserva.UI",
+      "RelativePath": "img/Hotel.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Hotel.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\img\\hotel1.jpg",
+      "SourceId": "ESFE.Reserva.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\",
+      "BasePath": "_content/ESFE.Reserva.UI",
+      "RelativePath": "img/hotel1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\hotel1.jpg"
     },
     {
       "Identity": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\js\\site.js",

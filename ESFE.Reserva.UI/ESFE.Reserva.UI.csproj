@@ -11,8 +11,4 @@
     <ProjectReference Include="..\ESFE.Reserva.EN\ESFE.Reserva.EN.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\img\" />
-  </ItemGroup>
-
 </Project>

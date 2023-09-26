@@ -9,7 +9,7 @@ a.navbar-brand[b-2vyzdzkkp7] {
 }
 
 a[b-2vyzdzkkp7] {
-  color: #0077cc;
+    color: #D2E0FB;
 }
 
 .btn-primary[b-2vyzdzkkp7] {
@@ -46,4 +46,8 @@ button.accept-policy[b-2vyzdzkkp7] {
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
+}
+
+.header-ga[b-2vyzdzkkp7]{
+    background:#000 ;
 }

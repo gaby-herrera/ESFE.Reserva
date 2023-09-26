@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\img\\Hotel.jpg",
+      "PackagePath": "staticwebassets\\img\\Hotel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\img\\hotel1.jpg",
+      "PackagePath": "staticwebassets\\img\\hotel1.jpg"
+    },
+    {
       "Id": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
