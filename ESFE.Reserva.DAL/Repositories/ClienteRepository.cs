@@ -13,9 +13,9 @@ namespace ESFE.Reserva.DAL.Repositories
 {
     public class ClienteRepository : IGenericRepository<Cliente>
     {
-        private readonly DbHotelContext _dbContext;
+        private readonly DbHotelSystemContext _dbContext;
 
-        public ClienteRepository(DbHotelContext dbContext)
+        public ClienteRepository(DbHotelSystemContext dbContext)
         {
             _dbContext = dbContext;
         }
