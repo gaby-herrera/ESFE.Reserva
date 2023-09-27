@@ -22,6 +22,10 @@ namespace ESFE.Reserva.BL.Service
             _HabitacionRepository = HabitacionRepository;
         }
 
+        public async Task<TipoHabitacion> Obtener(int id)
+        {
+            return await _TipoHabitacion.Obtener(id);
+        }
 
         public async Task<List<TipoHabitacion>> ObtenerTodos()
         {
