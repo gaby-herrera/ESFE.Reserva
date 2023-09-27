@@ -1,0 +1,48 @@
+﻿@using ESFE.Reserva.BL.DTO
+@model HabitacionDTO
+
+@{
+    ViewData["Title"] = "Detalles de Habitación";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8">
+            <div id="carouselHabitacion" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    @foreach (var imagen in Model.Tipo.Imgs)
+                    {
+                        <div class="carousel-item @(imagen == Model.Tipo.Imgs[0] ? "active" : "")">
+                            <img src="@imagen" class="d-block w-100" alt="Habitación">
+                        </div>
+                    }
+                </div>
+                <a class="carousel-control-prev" href="#carouselHabitacion" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselHabitacion" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h2>@Model.Tipo.Nombre</h2>
+            <p>Habitación @Model.NumeroHabitacion</p>
+            <p>Capacidad: @Model.Tipo.Capacidad</p>
+            <p>Precio: @Model.Tipo.Precio</p>
+            <p>Estado: @Model.IdEstadoH</p>
+            <button class="btn btn-primary">Reservar</button>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            // Inicializar el carrusel de Bootstrap
+            $('#carouselHabitacion').carousel();
+        });
+    </script>
+}
