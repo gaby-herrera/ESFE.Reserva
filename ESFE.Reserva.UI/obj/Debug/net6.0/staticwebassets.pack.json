@@ -13,12 +13,48 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\img\\Habitacionindividual.jpg",
+      "PackagePath": "staticwebassets\\img\\Habitacionindividual.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\img\\Habitacionindividual1.jpg",
+      "PackagePath": "staticwebassets\\img\\Habitacionindividual1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\img\\Habitacionindividual2.jpg",
+      "PackagePath": "staticwebassets\\img\\Habitacionindividual2.jpg"
+    },
+    {
       "Id": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\img\\Hotel.jpg",
       "PackagePath": "staticwebassets\\img\\Hotel.jpg"
     },
     {
+      "Id": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\img\\doble1.jpg",
+      "PackagePath": "staticwebassets\\img\\doble1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\img\\doble2.jpg",
+      "PackagePath": "staticwebassets\\img\\doble2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\img\\doble3.jpg",
+      "PackagePath": "staticwebassets\\img\\doble3.jpg"
+    },
+    {
       "Id": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\img\\hotel1.jpg",
       "PackagePath": "staticwebassets\\img\\hotel1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\img\\suite 2.jpg",
+      "PackagePath": "staticwebassets\\img\\suite 2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\img\\suite1.jpg",
+      "PackagePath": "staticwebassets\\img\\suite1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\img\\suite3.jpg",
+      "PackagePath": "staticwebassets\\img\\suite3.jpg"
     },
     {
       "Id": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\js\\site.js",
