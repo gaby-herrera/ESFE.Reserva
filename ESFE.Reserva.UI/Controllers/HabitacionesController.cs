@@ -1,24 +1,28 @@
 ﻿using ESFE.Habitacion.BL.Service;
+using ESFE.Reserva.BL.DTO;
 using ESFE.Reserva.BL.Service;
 using ESFE.Reserva.EN;
 using ESFE.Reserva.UI.Models.ViewModel;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace ESFE.Reserva.UI.Controllers
 {
     public class HabitacionesController : Controller
     {
         private readonly IHabitacionService _habitacionService;
+        private readonly ITipoHabitacionService _tipoService;
 
-        public HabitacionesController(IHabitacionService serv)
+        public HabitacionesController(IHabitacionService serv, ITipoHabitacionService tipo)
         {
             _habitacionService = serv;
+            _tipoService = tipo;
         }
         public IActionResult Index()
         {
             return View();
         }
-        public IActionResult Familiar()
+        public IActionResult Buscar()
         {
             return View();
         }
@@ -69,7 +73,58 @@ namespace ESFE.Reserva.UI.Controllers
             public DateTime FechaInicio { get; set; }
             public DateTime FechaFin { get; set; }
         }
+        [HttpGet]
+        public async Task<IActionResult> Disponibles(
+            int capacidad = 0,
+            string fechaInicioStr = null,
+            string fechaFinStr = null)
+        {
+            try
+            {
+                DateTime? fechaInicio = null;
+                DateTime? fechaFin = null;
 
+                if (!string.IsNullOrEmpty(fechaInicioStr) && !string.IsNullOrEmpty(fechaFinStr))
+                {
+                    if (DateTime.TryParse(fechaInicioStr, out var parsedFechaInicio) && DateTime.TryParse(fechaFinStr, out var parsedFechaFin))
+                    {
+                        fechaInicio = parsedFechaInicio;
+                        fechaFin = parsedFechaFin;
+                    }
+                }
 
+                List<HabitacionDTO> habitacionesDisponibles = await _habitacionService.ObtenerDisponibles(capacidad, fechaInicio ?? DateTime.MinValue, fechaFin ?? DateTime.MinValue);
+               
+
+                return View(habitacionesDisponibles);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { error = ex.Message });
+            }
+
+        }
+        public async Task<IActionResult> Detalles(int id)
+        {
+            try
+            {
+                // Llamar al servicio para obtener la información de la habitación por su ID
+                var habitacion = await _habitacionService.Obtener(id);
+
+                if (habitacion == null)
+                {
+                    // Habitación no encontrada, puedes manejar esto de acuerdo a tus necesidades
+                    return NotFound();
+                }
+
+                // Retornar la vista con la información de la habitación
+                return View(habitacion);
+            }
+            catch (Exception ex)
+            {
+                // Manejar cualquier error que pueda ocurrir
+                return StatusCode(500, new { error = ex.Message });
+            }
+        }
     }
 }
