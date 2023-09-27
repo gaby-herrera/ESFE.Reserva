@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Habitaciones Disponibles</title>
+    <!-- Agrega los enlaces a las bibliotecas de Bootstrap y otros recursos aquí -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">Buscar Habitaciones Disponibles</div>
+                    <div class="card-body">
+                        <form action="/Habitaciones/Disponibles" method="get">
+                            <div class="form-group">
+                                <label for="fechaInicio">Fecha de Inicio:</label>
+                                <input type="date" class="form-control" id="fechaInicio" name="fechaInicio">
+                            </div>
+                            <div class="form-group">
+                                <label for="fechaFin">Fecha Final:</label>
+                                <input type="date" class="form-control" id="fechaFin" name="fechaFin">
+                            </div>
+                            <div class="form-group">
+                                <label for="capacidad">Capacidad de Habitaciones:</label>
+                                <input type="number" class="form-control" id="capacidad" name="capacidad">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
