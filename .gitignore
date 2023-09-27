@@ -200,3 +200,30 @@ ReSharper*/
 .idea/caches/
 
 # Archivos de caché de Rider
+.vs/ESFE.Reserva/DesignTimeBuild/.dtbcache.v2
+.vs/ESFE.Reserva/v17/.futdcache.v2
+.vs/ESFE.Reserva/v17/.suo
+ESFE.Reserva.DAL/obj/Debug/net6.0/ESFE.Reserva.DAL.csproj.AssemblyReference.cache
+ESFE.Reserva.DAL/obj/Debug/net6.0/ESFE.Reserva.DAL.dll
+ESFE.Reserva.DAL/obj/Debug/net6.0/ESFE.Reserva.DAL.genruntimeconfig.cache
+ESFE.Reserva.DAL/obj/Debug/net6.0/ESFE.Reserva.DAL.pdb
+ESFE.Reserva.DAL/obj/Debug/net6.0/ref/ESFE.Reserva.DAL.dll
+ESFE.Reserva.DAL/obj/Debug/net6.0/refint/ESFE.Reserva.DAL.dll
+ESFE.Reserva.UI/bin/Debug/net6.0/ESFE.Reserva.BL.dll
+ESFE.Reserva.UI/bin/Debug/net6.0/ESFE.Reserva.BL.pdb
+ESFE.Reserva.UI/bin/Debug/net6.0/ESFE.Reserva.DAL.dll
+ESFE.Reserva.UI/bin/Debug/net6.0/ESFE.Reserva.DAL.pdb
+ESFE.Reserva.UI/bin/Debug/net6.0/ESFE.Reserva.EN.dll
+ESFE.Reserva.UI/bin/Debug/net6.0/ESFE.Reserva.EN.pdb
+ESFE.Reserva.UI/bin/Debug/net6.0/ESFE.Reserva.UI.dll
+ESFE.Reserva.UI/bin/Debug/net6.0/ESFE.Reserva.UI.pdb
+ESFE.Reserva.UI/obj/Debug/net6.0/ESFE.Reserva.UI.AssemblyInfo.cs
+ESFE.Reserva.UI/obj/Debug/net6.0/ESFE.Reserva.UI.AssemblyInfoInputs.cache
+ESFE.Reserva.UI/obj/Debug/net6.0/ESFE.Reserva.UI.csproj.AssemblyReference.cache
+ESFE.Reserva.UI/obj/Debug/net6.0/ESFE.Reserva.UI.dll
+ESFE.Reserva.UI/obj/Debug/net6.0/ESFE.Reserva.UI.GeneratedMSBuildEditorConfig.editorconfig
+ESFE.Reserva.UI/obj/Debug/net6.0/ESFE.Reserva.UI.GlobalUsings.g.cs
+ESFE.Reserva.UI/obj/Debug/net6.0/ESFE.Reserva.UI.pdb
+ESFE.Reserva.UI/obj/Debug/net6.0/ESFE.Reserva.UI.RazorAssemblyInfo.cache
+ESFE.Reserva.UI/obj/Debug/net6.0/ESFE.Reserva.UI.RazorAssemblyInfo.cs
+ESFE.Reserva.UI/obj/Debug/net6.0/staticwebassets.build.json
