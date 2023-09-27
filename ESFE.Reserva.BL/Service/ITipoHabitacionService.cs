@@ -4,6 +4,6 @@ namespace ESFE.Reserva.BL.Service
 {
     public interface ITipoHabitacionService
     {
-        public Task<IQueryable<TipoHabitacion>> ObtenerTodos();
+        Task<List<TipoHabitacion>> ObtenerTodos();
     }
 }

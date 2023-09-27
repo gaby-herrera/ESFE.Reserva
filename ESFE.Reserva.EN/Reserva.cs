@@ -17,13 +17,11 @@ public partial class Reserva
 
     public DateTime FechaFin { get; set; }
 
-    public int IdTarifa { get; set; }
+    public decimal Precio { get; set; }
 
     public virtual Cliente IdClienteNavigation { get; set; } = null!;
 
     public virtual EstadoR IdEstadoRNavigation { get; set; } = null!;
 
     public virtual Habitacion IdHabitacionNavigation { get; set; } = null!;
-
-    public virtual Tarifa IdTarifaNavigation { get; set; } = null!;
 }

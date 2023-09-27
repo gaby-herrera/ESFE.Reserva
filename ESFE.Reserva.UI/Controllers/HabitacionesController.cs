@@ -1,4 +1,5 @@
-﻿using ESFE.Reserva.BL.Service;
+﻿using ESFE.Habitacion.BL.Service;
+using ESFE.Reserva.BL.Service;
 using ESFE.Reserva.EN;
 using ESFE.Reserva.UI.Models.ViewModel;
 using Microsoft.AspNetCore.Mvc;
@@ -7,11 +8,11 @@ namespace ESFE.Reserva.UI.Controllers
 {
     public class HabitacionesController : Controller
     {
-        private readonly IReservaService _RerservaService;
+        private readonly IHabitacionService _habitacionService;
 
-        public HabitacionesController(IReservaService ReservaService)
+        public HabitacionesController(IHabitacionService serv)
         {
-            _RerservaService = ReservaService;
+            _habitacionService = serv;
         }
         public IActionResult Index()
         {
@@ -24,22 +25,51 @@ namespace ESFE.Reserva.UI.Controllers
 
         public async Task<IActionResult> Lista()
         {
-            IQueryable<EN.Reserva> queryReservaSQL = await _RerservaService.ObtenerTodos();
-            List<VMReserva> lista = queryReservaSQL  
-                .Select(c => new VMReserva
-                {
-                    IdReserva = c.IdReserva,
-                    IdEstadoR = c.IdEstadoR,
-                    IdCliente = c.IdCliente,
-                    IdHabitacion = c.IdHabitacion,
-                    FechaInicio = c.FechaInicio,
-                    FechaFin = c.FechaFin,
-                    IdTarifa = c.IdTarifa
+            IQueryable<EN.Habitacion> queryReservaSQL = await _habitacionService.ObtenerTodos();
+            //List<VMReserva> lista = queryReservaSQL  
+                //.Select(c => new VMReserva
+                //{
+                //    IdReserva = c.IdReserva,
+                //    IdEstadoR = c.IdEstadoR,
+                //    IdCliente = c.IdCliente,
+                //    IdHabitacion = c.IdHabitacion,
+                //    FechaInicio = c.FechaInicio,
+                //    FechaFin = c.FechaFin,
+                //    IdTarifa = c.IdTarifa
 
-                }).ToList();
+                //}).ToList();
 
 
-            return StatusCode(StatusCodes.Status200OK, lista);
+            return StatusCode(StatusCodes.Status200OK, queryReservaSQL);
         }
+
+        [HttpPost]
+        public async Task<IActionResult> ObtenerDisponibles([FromBody] FiltroHabitacionesDisponibles filtro)
+        {
+            try
+            {
+                // Llamar al servicio para obtener las habitaciones disponibles
+                var habitacionesDisponibles = await _habitacionService.ObtenerDisponibles(
+                    filtro.Capacidad,
+                    filtro.FechaInicio,
+                    filtro.FechaFin
+                );
+
+                return Ok(habitacionesDisponibles);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Ocurrió un error: {ex.Message}");
+            }
+        }
+
+        public class FiltroHabitacionesDisponibles
+        {
+            public int Capacidad { get; set; }
+            public DateTime FechaInicio { get; set; }
+            public DateTime FechaFin { get; set; }
+        }
+
+
     }
 }

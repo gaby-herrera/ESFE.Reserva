@@ -33,7 +33,7 @@ namespace ESFE.Reserva.UI.Controllers
                     IdHabitacion = c.IdHabitacion,
                     FechaInicio = c.FechaInicio,
                     FechaFin = c.FechaFin,
-                    IdTarifa = c.IdTarifa
+                    //IdTarifa = c.IdTarifa
 
                 }).ToList();
             return StatusCode(StatusCodes.Status200OK, lista);
@@ -49,7 +49,7 @@ namespace ESFE.Reserva.UI.Controllers
                 IdHabitacion = Modelo.IdHabitacion,
                 FechaInicio = Modelo.IdFechaInicio,
                 FechaFin = Modelo.IdFechaFin,
-                IdTarifa = Modelo.IdTarifa,
+                //IdTarifa = Modelo.IdTarifa,
                 IdEstadoR = Modelo.IdEstadoR,
             };
             bool respuesta = await _ReservaService.Insertar(NuevoModelo);
@@ -67,7 +67,7 @@ namespace ESFE.Reserva.UI.Controllers
                 IdHabitacion = Modelo.IdHabitacion,
                 FechaInicio = Modelo.IdFechaInicio,
                 FechaFin = Modelo.IdFechaFin,
-                IdTarifa = Modelo.IdTarifa,
+                //IdTarifa = Modelo.IdTarifa,
                 IdEstadoR = Modelo.IdEstadoR,
             };
             bool respuesta = await _ReservaService.Actualizar(NuevoModelo);

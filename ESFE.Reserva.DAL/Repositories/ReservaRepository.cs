@@ -10,9 +10,9 @@ namespace ESFE.Reserva.DAL.Repositories
 {
     public class ReservaRepository : IGenericRepository<EN.Reserva>
     {
-        public readonly DbHotelContext _dbcontext;
+        public readonly DbHotelSystemContext _dbcontext;
 
-        public ReservaRepository(DbHotelContext context)
+        public ReservaRepository(DbHotelSystemContext context)
         {
             _dbcontext = context;
         }

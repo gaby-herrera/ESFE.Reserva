@@ -2910,19 +2910,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MINEDUCYT\\.nuget\\packages\\": {}
+    "C:\\Users\\joanz\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.DAL\\ESFE.Reserva.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.DAL\\ESFE.Reserva.DAL.csproj",
       "projectName": "ESFE.Reserva.DAL",
-      "projectPath": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.DAL\\ESFE.Reserva.DAL.csproj",
-      "packagesPath": "C:\\Users\\MINEDUCYT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.DAL\\obj\\",
+      "projectPath": "C:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.DAL\\ESFE.Reserva.DAL.csproj",
+      "packagesPath": "C:\\Users\\joanz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\MINEDUCYT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\joanz\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2936,8 +2936,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.EN\\ESFE.Reserva.EN.csproj": {
-              "projectPath": "C:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.EN\\ESFE.Reserva.EN.csproj"
+            "C:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.EN\\ESFE.Reserva.EN.csproj": {
+              "projectPath": "C:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.EN\\ESFE.Reserva.EN.csproj"
             }
           }
         }
@@ -2979,7 +2979,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

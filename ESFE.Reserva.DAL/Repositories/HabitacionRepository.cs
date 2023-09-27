@@ -12,9 +12,9 @@ namespace ESFE.Habitacion.DAL.Repositories
 {
     public class HabitacionRepository : IGenericRepository<Reserva.EN.Habitacion>
     {
-        private readonly DbHotelContext _dbcontext;
+        private readonly DbHotelSystemContext _dbcontext;
 
-        public HabitacionRepository(DbHotelContext context)
+        public HabitacionRepository(DbHotelSystemContext context)
         {
             _dbcontext = context;
         }

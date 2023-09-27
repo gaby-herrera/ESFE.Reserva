@@ -13,7 +13,6 @@ public partial class TipoHabitacion
 
     public int? Capacidad { get; set; }
 
+    public decimal Precio { get; set; }
     public virtual ICollection<Habitacion> Habitacions { get; set; } = new List<Habitacion>();
-
-    public virtual ICollection<Tarifa> Tarifas { get; set; } = new List<Tarifa>();
 }

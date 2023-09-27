@@ -5,19 +5,29 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
+using System.Text.Json;
 
 namespace ESFE.Reserva.BL.Service
 {
     public class TipoHabitacionService : ITipoHabitacionService
     {
         private readonly IGenericRepository<TipoHabitacion> _TipoHabitacion;
-        public TipoHabitacionService(IGenericRepository<TipoHabitacion> TipoHabitacionRepo)
+        private readonly IGenericRepository<Reserva.EN.Habitacion> _HabitacionRepository;
+
+        public TipoHabitacionService(IGenericRepository<TipoHabitacion> TipoHabitacionRepo, IGenericRepository<Reserva.EN.Habitacion> HabitacionRepository)
         {
             _TipoHabitacion = TipoHabitacionRepo;
+            _HabitacionRepository = HabitacionRepository;
         }
-        public async Task<IQueryable<TipoHabitacion>> ObtenerTodos()
+
+
+        public async Task<List<TipoHabitacion>> ObtenerTodos()
         {
-            return await _TipoHabitacion.ObtenerTodos();
+            IQueryable<TipoHabitacion> queryTipoHabitacionSQL = await _TipoHabitacion.ObtenerTodos();
+            var result = queryTipoHabitacionSQL.Include(t => t.Habitacions).ToList();
+            return result;
         }
     }
 }
