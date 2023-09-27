@@ -14,7 +14,7 @@ namespace ESFE.Habitacion.BL.Service
         Task<bool> Insertar(Reserva.EN.Habitacion modelo);
         Task<bool> Actualizar(Reserva.EN.Habitacion modelo);
         Task<bool> Eliminar(int id);
-        Task<Reserva.EN.Habitacion> Obtener(int id);
+        Task<HabitacionDTO> Obtener(int id);
         Task<IQueryable<Reserva.EN.Habitacion>> ObtenerTodos();
         Task<List<HabitacionDTO>> ObtenerDisponibles(int capacidad, DateTime fechaInicio, DateTime fechaFin);
     }

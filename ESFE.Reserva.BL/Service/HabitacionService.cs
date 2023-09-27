@@ -1,4 +1,5 @@
-﻿using ESFE.Reserva.BL.Service;
+﻿using ESFE.Reserva.BL.DTO;
+using ESFE.Reserva.BL.Service;
 using ESFE.Reserva.DAL.Repositories;
 using ESFE.Reserva.EN;
 using Microsoft.EntityFrameworkCore;
@@ -42,9 +43,20 @@ namespace ESFE.Habitacion.BL.Service
             return await _habitacionRepository.Insertar(modelo);
         }
 
-        public async Task<Reserva.EN.Habitacion> Obtener(int id)
+        public async Task<HabitacionDTO> Obtener(int id)
         {
-            return await _habitacionRepository.Obtener(id);
+            Reserva.EN.Habitacion habitacion = await _habitacionRepository.Obtener(id);
+            var tiposHabitaciones = await _tipoHabitacionRepository.ObtenerTodos();
+
+            HabitacionDTO habitacionDto = new HabitacionDTO()
+            {
+                IdHabitacion = habitacion.IdHabitacion,
+                IdEstadoH = habitacion.IdEstadoH,
+                IdTipoHabitacion = habitacion.IdTipoHabitacion,
+                NumeroHabitacion = habitacion.NumeroHabitacion,
+                Tipo = tiposHabitaciones.FirstOrDefault(t => t.IdTipoHabitacion == habitacion.IdTipoHabitacion)
+            };
+            return habitacionDto;
         }
 
         public async Task<IQueryable<Reserva.EN.Habitacion>> ObtenerTodos()
@@ -54,33 +66,59 @@ namespace ESFE.Habitacion.BL.Service
             return result;
         }
 
-        public async Task<List<Reserva.EN.Habitacion>> ObtenerDisponibles(int capacidad, DateTime fechaInicio, DateTime fechaFin)
+        public async Task<List<HabitacionDTO>> ObtenerDisponibles(int capacidad, DateTime fechaInicio, DateTime fechaFin)
         {
             // Obtener Listas
             var tiposHabitaciones = await _tipoHabitacionRepository.ObtenerTodos();
             var habitaciones = await _habitacionRepository.ObtenerTodos();
             var reservas = await _reservaRepository.ObtenerTodos();
 
-            // Obtener ids reservas que se superponen con el rango de fechas especificado
-            var reservasSuperpuestas = reservas
-                .Where(r => r.FechaInicio <= fechaFin && r.FechaFin >= fechaInicio)
-                .Select(r => r.IdHabitacion)
-                .ToList();
+            IQueryable<Reserva.EN.Habitacion> habitacionesFiltradas = habitaciones;
 
-            // Obtener ids de habitaciones con capacidad solicitada
-            var tiposPermitidos = tiposHabitaciones
-                .Where(t => t.Capacidad > capacidad)
-                .Select(t => t.IdTipoHabitacion)
-                .ToList();
+            // Filtrar por capacidad si se proporciona el valor
+            if (capacidad > 0)
+            {
+                // Obtener ids de tipos de habitaciones con capacidad solicitada
+                var tiposPermitidos = tiposHabitaciones
+                    .Where(t => t.Capacidad >= capacidad)
+                    .Select(t => t.IdTipoHabitacion)
+                    .ToList();
 
-            // Filtrar las habitaciones disponibles excluyendo las reservas superpuestas
-            var habitacionesDisponibles = habitaciones
-                .Where(h => tiposPermitidos.Contains(h.IdTipoHabitacion) && !reservasSuperpuestas.Contains(h.IdHabitacion))
-                .ToList();
+                // Filtrar las habitaciones por tipos de habitaciones permitidos
+                habitacionesFiltradas = habitacionesFiltradas
+                    .Where(h => tiposPermitidos.Contains(h.IdTipoHabitacion));
+            }
 
+            // Filtrar por fechas si se proporcionan los valores
+            if (fechaInicio != DateTime.MinValue && fechaFin != DateTime.MinValue)
+            {
+                // Obtener ids de reservas que se superponen con el rango de fechas especificado
+                var reservasSuperpuestas = reservas
+                    .Where(r => r.FechaInicio <= fechaFin && r.FechaFin >= fechaInicio)
+                    .Select(r => r.IdHabitacion)
+                    .ToList();
 
-            return habitacionesDisponibles;
+                // Filtrar las habitaciones disponibles excluyendo las reservas superpuestas
+                habitacionesFiltradas = habitacionesFiltradas
+                    .Where(h => !reservasSuperpuestas.Contains(h.IdHabitacion));
+            }
+
+            // Obtener habitaciones disponibles
+            var habitacionesDisponibles = await habitacionesFiltradas.ToListAsync();
+
+            // Mapear a HabitacionDTO de forma sincrónica
+            var habitacionesDTO = habitacionesDisponibles.Select(h => new HabitacionDTO
+            {
+                IdHabitacion = h.IdHabitacion,
+                IdEstadoH = h.IdEstadoH,
+                IdTipoHabitacion = h.IdTipoHabitacion,
+                NumeroHabitacion = h.NumeroHabitacion,
+                Tipo = tiposHabitaciones.FirstOrDefault(t => t.IdTipoHabitacion == h.IdTipoHabitacion)
+            }).ToList();
+
+            return habitacionesDTO;
         }
 
+      
     }
 }
