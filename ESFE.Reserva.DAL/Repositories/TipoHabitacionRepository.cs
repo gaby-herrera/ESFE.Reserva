@@ -34,9 +34,9 @@ namespace ESFE.Reserva.DAL.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<TipoHabitacion> Obtener(int id)
+        public async Task<TipoHabitacion> Obtener(int id)
         {
-            throw new NotImplementedException();
+            return await _dbContext.TipoHabitacions.FindAsync(id);
         }
 
         public async Task<IQueryable<TipoHabitacion>> ObtenerTodos()
