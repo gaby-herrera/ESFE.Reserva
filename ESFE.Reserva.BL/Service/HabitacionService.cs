@@ -69,7 +69,7 @@ namespace ESFE.Habitacion.BL.Service
 
             // Obtener ids de habitaciones con capacidad solicitada
             var tiposPermitidos = tiposHabitaciones
-                .Where(t => t.Capacidad > capacidad)
+                .Where(t => t.Capacidad >= capacidad)
                 .Select(t => t.IdTipoHabitacion)
                 .ToList();
 
