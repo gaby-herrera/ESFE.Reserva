@@ -16,6 +16,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = c:\Users\joanz\dev\contributions\ESFE.Reserva\ESFE.Reserva.UI
 build_property._RazorSourceGeneratorDebug = 
 
+[c:/Users/joanz/dev/contributions/ESFE.Reserva/ESFE.Reserva.UI/Views/Habitaciones/Buscar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRhY2lvbmVzXEJ1c2Nhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/joanz/dev/contributions/ESFE.Reserva/ESFE.Reserva.UI/Views/Habitaciones/Detalles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRhY2lvbmVzXERldGFsbGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/joanz/dev/contributions/ESFE.Reserva/ESFE.Reserva.UI/Views/Habitaciones/Disponibles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRhY2lvbmVzXERpc3BvbmlibGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [c:/Users/joanz/dev/contributions/ESFE.Reserva/ESFE.Reserva.UI/Views/Habitaciones/Familiar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFiaXRhY2lvbmVzXEZhbWlsaWFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
