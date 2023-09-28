@@ -73,17 +73,17 @@ namespace ESFE.Reserva.UI.Controllers
             public DateTime FechaInicio { get; set; }
             public DateTime FechaFin { get; set; }
         }
+
+        //Este es el de la URL DINAMICA
         [HttpGet]
-        public async Task<IActionResult> Disponibles(
-            int capacidad = 0,
-            string fechaInicioStr = null,
-            string fechaFinStr = null)
+        public async Task<IActionResult> Disponibles(int capacidad = 0,string fechaInicioStr = null,string fechaFinStr = null)
         {
             try
             {
                 DateTime? fechaInicio = null;
                 DateTime? fechaFin = null;
 
+                //Verificar que las fechas no esten vacias
                 if (!string.IsNullOrEmpty(fechaInicioStr) && !string.IsNullOrEmpty(fechaFinStr))
                 {
                     if (DateTime.TryParse(fechaInicioStr, out var parsedFechaInicio) && DateTime.TryParse(fechaFinStr, out var parsedFechaFin))
