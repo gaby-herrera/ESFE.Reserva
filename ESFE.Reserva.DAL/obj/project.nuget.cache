@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CG3Iz4WLLA6huHen9M7XxV1RtUVU//nH559mWIaXXet+cA76gh3m3FsIF/aPyXJ+rN9fXnEZ7qhZEX2H+QnLKA==",
+  "dgSpecHash": "7NKLIDwedZg1ar/H2VsNL1xROPpGJKmDZCX2KxYrLm6Rc7J4A5pliIYwh9McdUHHoFiclHz0prfXvBKMtWUxjQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.DAL\\ESFE.Reserva.DAL.csproj",
+  "projectFilePath": "C:\\Users\\MINEDUCYT\\Desktop\\Cambios_del_ProyectoReserva\\ESFE.Reserva\\ESFE.Reserva.DAL\\ESFE.Reserva.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MINEDUCYT\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\MINEDUCYT\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

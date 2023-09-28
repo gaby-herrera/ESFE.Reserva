@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.DAL\\ESFE.Reserva.DAL.csproj": {}
+    "C:\\Users\\MINEDUCYT\\Desktop\\Cambios_del_ProyectoReserva\\ESFE.Reserva\\ESFE.Reserva.DAL\\ESFE.Reserva.DAL.csproj": {}
   },
   "projects": {
-    "c:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.DAL\\ESFE.Reserva.DAL.csproj": {
+    "C:\\Users\\MINEDUCYT\\Desktop\\Cambios_del_ProyectoReserva\\ESFE.Reserva\\ESFE.Reserva.DAL\\ESFE.Reserva.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.DAL\\ESFE.Reserva.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\MINEDUCYT\\Desktop\\Cambios_del_ProyectoReserva\\ESFE.Reserva\\ESFE.Reserva.DAL\\ESFE.Reserva.DAL.csproj",
         "projectName": "ESFE.Reserva.DAL",
-        "projectPath": "c:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.DAL\\ESFE.Reserva.DAL.csproj",
+        "projectPath": "C:\\Users\\MINEDUCYT\\Desktop\\Cambios_del_ProyectoReserva\\ESFE.Reserva\\ESFE.Reserva.DAL\\ESFE.Reserva.DAL.csproj",
         "packagesPath": "C:\\Users\\MINEDUCYT\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.DAL\\obj\\",
+        "outputPath": "C:\\Users\\MINEDUCYT\\Desktop\\Cambios_del_ProyectoReserva\\ESFE.Reserva\\ESFE.Reserva.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MINEDUCYT\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "c:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.EN\\ESFE.Reserva.EN.csproj": {
-                "projectPath": "c:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.EN\\ESFE.Reserva.EN.csproj"
+              "C:\\Users\\MINEDUCYT\\Desktop\\Cambios_del_ProyectoReserva\\ESFE.Reserva\\ESFE.Reserva.EN\\ESFE.Reserva.EN.csproj": {
+                "projectPath": "C:\\Users\\MINEDUCYT\\Desktop\\Cambios_del_ProyectoReserva\\ESFE.Reserva\\ESFE.Reserva.EN\\ESFE.Reserva.EN.csproj"
               }
             }
           }
@@ -71,18 +71,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.EN\\ESFE.Reserva.EN.csproj": {
+    "C:\\Users\\MINEDUCYT\\Desktop\\Cambios_del_ProyectoReserva\\ESFE.Reserva\\ESFE.Reserva.EN\\ESFE.Reserva.EN.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.EN\\ESFE.Reserva.EN.csproj",
+        "projectUniqueName": "C:\\Users\\MINEDUCYT\\Desktop\\Cambios_del_ProyectoReserva\\ESFE.Reserva\\ESFE.Reserva.EN\\ESFE.Reserva.EN.csproj",
         "projectName": "ESFE.Reserva.EN",
-        "projectPath": "c:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.EN\\ESFE.Reserva.EN.csproj",
+        "projectPath": "C:\\Users\\MINEDUCYT\\Desktop\\Cambios_del_ProyectoReserva\\ESFE.Reserva\\ESFE.Reserva.EN\\ESFE.Reserva.EN.csproj",
         "packagesPath": "C:\\Users\\MINEDUCYT\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\MINEDUCYT\\Desktop\\proyectos\\ESFE.Reserva\\ESFE.Reserva.EN\\obj\\",
+        "outputPath": "C:\\Users\\MINEDUCYT\\Desktop\\Cambios_del_ProyectoReserva\\ESFE.Reserva\\ESFE.Reserva.EN\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MINEDUCYT\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -138,7 +138,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
