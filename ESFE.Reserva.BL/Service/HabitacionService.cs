@@ -76,10 +76,10 @@ namespace ESFE.Habitacion.BL.Service
             IQueryable<Reserva.EN.Habitacion> habitacionesFiltradas = habitaciones;
 
             // Filtrar por capacidad si se proporciona el valor
-            if (capacidad > 0)
+            if (capacidad > 0) // si recibis una capacidad 
             {
                 // Obtener ids de tipos de habitaciones con capacidad solicitada
-                var tiposPermitidos = tiposHabitaciones
+                var tiposPermitidos = tiposHabitaciones // -->  [ 1, 2 ]
                     .Where(t => t.Capacidad >= capacidad)
                     .Select(t => t.IdTipoHabitacion)
                     .ToList();
@@ -101,7 +101,7 @@ namespace ESFE.Habitacion.BL.Service
                 // Filtrar las habitaciones disponibles excluyendo las reservas superpuestas
                 habitacionesFiltradas = habitacionesFiltradas
                     .Where(h => !reservasSuperpuestas.Contains(h.IdHabitacion));
-            }
+            } // 
 
             // Obtener habitaciones disponibles
             var habitacionesDisponibles = await habitacionesFiltradas.ToListAsync();
@@ -113,7 +113,7 @@ namespace ESFE.Habitacion.BL.Service
                 IdEstadoH = h.IdEstadoH,
                 IdTipoHabitacion = h.IdTipoHabitacion,
                 NumeroHabitacion = h.NumeroHabitacion,
-                Tipo = tiposHabitaciones.FirstOrDefault(t => t.IdTipoHabitacion == h.IdTipoHabitacion)
+                Tipo = tiposHabitaciones.FirstOrDefault(t => t.IdTipoHabitacion == h.IdTipoHabitacion) // Asignar el tipo
             }).ToList();
 
             return habitacionesDTO;
