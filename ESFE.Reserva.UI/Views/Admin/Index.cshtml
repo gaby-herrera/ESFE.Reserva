@@ -12,27 +12,21 @@
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card">
-                    <div class="card-header">Buscar Habitaciones Disponibles</div>
+                    <div class="card-header">Vista exclusiva para administrador</div>
                     <div class="card-body">
 
-
-                        <form action="/Habitaciones/Disponibles" method="get">
-
-                            <div class="form-group">
-                                <label for="fechaInicio">Fecha de Inicio:</label>
-                                <input type="date" class="form-control" id="fechaInicio" name="fechaInicioStr">
-                            </div>
+                        <h1>Login Admin</h1>
+                        <form action="/Admin/Reservas" method="get">
 
                             <div class="form-group">
-                                <label for="fechaFin">Fecha Final:</label>
-                                <input type="date" class="form-control" id="fechaFin" name="fechaFinStr">
+                                <label for="username">UserName:</label>
+                                <input type="text" class="form-control" id="username" name="username">
                             </div>
-
                             <div class="form-group">
-                                <label for="capacidad">Capacidad de Habitaciones:</label>
-                                <input type="number" class="form-control" id="capacidad" name="capacidad">
+                                <label for="password">Password:</label>
+                                <input type="password" class="form-control" id="password" name="password">
                             </div>
-                            <button type="submit" class="btn btn-primary">Buscar</button>
+                            <button type="submit" class="btn btn-primary">Entrar</button>
 
 
                         </form>

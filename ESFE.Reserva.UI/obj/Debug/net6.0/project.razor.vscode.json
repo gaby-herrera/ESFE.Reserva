@@ -23744,6 +23744,16 @@
       "FilePath": "c:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.UI\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.UI\\Views\\Admin\\Index.cshtml",
+      "TargetPath": "Views\\Admin\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.UI\\Views\\Admin\\Reservas.cshtml",
+      "TargetPath": "Views\\Admin\\Reservas.cshtml",
+      "FileKind": "mvc"
     }
   ]
 }

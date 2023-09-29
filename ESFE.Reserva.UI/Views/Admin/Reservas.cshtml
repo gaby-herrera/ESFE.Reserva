@@ -1,0 +1,32 @@
+﻿@using ESFE.Reserva.UI.Models.ViewModel
+@model List<MVReservaAdmin>
+
+<h1>Lista de Reservas</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID Reserva</th>
+            <th>Estado Reserva</th>
+            <th>Cliente</th>
+            <th>Habitación</th>
+            <th>Fecha de Inicio</th>
+            <th>Fecha de Fin</th>
+            <th>Precio</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var reserva in Model)
+        {
+            <tr>
+                <td>@reserva.IdReserva</td>
+                <td>@reserva.EstadoReserva</td>
+                <td>@reserva.Cliente</td>
+                <td>@reserva.Habitacion</td>
+                <td>@reserva.FechaInicio.ToShortDateString()</td>
+                <td>@reserva.FechaFin.ToShortDateString()</td>
+                <td>@reserva.Precio.ToString("C")</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -76,14 +76,14 @@ namespace ESFE.Reserva.UI.Controllers
 
         //Este es el de la URL DINAMICA
         [HttpGet]
-        public async Task<IActionResult> Disponibles(int capacidad = 0,string fechaInicioStr = null,string fechaFinStr = null)
+        public async Task<IActionResult> Disponibles(int capacidad = 0, string fechaInicioStr = null, string fechaFinStr = null)
         {
             try
             {
                 DateTime? fechaInicio = null;
                 DateTime? fechaFin = null;
 
-                //Verificar que las fechas no esten vacias
+                //Verificar que las fechas no estén vacías
                 if (!string.IsNullOrEmpty(fechaInicioStr) && !string.IsNullOrEmpty(fechaFinStr))
                 {
                     if (DateTime.TryParse(fechaInicioStr, out var parsedFechaInicio) && DateTime.TryParse(fechaFinStr, out var parsedFechaFin))
@@ -94,6 +94,7 @@ namespace ESFE.Reserva.UI.Controllers
                 }
 
                 List<HabitacionDTO> habitacionesDisponibles = await _habitacionService.ObtenerDisponibles(capacidad, fechaInicio ?? DateTime.MinValue, fechaFin ?? DateTime.MinValue);
+
                
 
                 return View(habitacionesDisponibles);
@@ -102,8 +103,9 @@ namespace ESFE.Reserva.UI.Controllers
             {
                 return StatusCode(500, new { error = ex.Message });
             }
-
         }
+
+
         public async Task<IActionResult> Detalles(int id)
         {
             try

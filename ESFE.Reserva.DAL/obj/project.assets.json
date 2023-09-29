@@ -2915,11 +2915,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.DAL\\ESFE.Reserva.DAL.csproj",
+      "projectUniqueName": "C:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.DAL\\ESFE.Reserva.DAL.csproj",
       "projectName": "ESFE.Reserva.DAL",
-      "projectPath": "c:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.DAL\\ESFE.Reserva.DAL.csproj",
+      "projectPath": "C:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.DAL\\ESFE.Reserva.DAL.csproj",
       "packagesPath": "C:\\Users\\joanz\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.DAL\\obj\\",
+      "outputPath": "C:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\joanz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2936,8 +2936,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "c:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.EN\\ESFE.Reserva.EN.csproj": {
-              "projectPath": "c:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.EN\\ESFE.Reserva.EN.csproj"
+            "C:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.EN\\ESFE.Reserva.EN.csproj": {
+              "projectPath": "C:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.EN\\ESFE.Reserva.EN.csproj"
             }
           }
         }

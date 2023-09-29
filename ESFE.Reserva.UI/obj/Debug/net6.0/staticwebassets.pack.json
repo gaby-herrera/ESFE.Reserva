@@ -41,6 +41,14 @@
       "PackagePath": "staticwebassets\\img\\doble3.jpg"
     },
     {
+      "Id": "C:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\img\\habitacion7.jpg",
+      "PackagePath": "staticwebassets\\img\\habitacion7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\img\\habitacion9.jpg",
+      "PackagePath": "staticwebassets\\img\\habitacion9.jpg"
+    },
+    {
       "Id": "C:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\img\\hotel1.jpg",
       "PackagePath": "staticwebassets\\img\\hotel1.jpg"
     },

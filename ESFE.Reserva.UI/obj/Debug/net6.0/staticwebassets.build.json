@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Xa9+95yXgJca8nvv7tHEu3fl8ghcZIoIsibzz9slm10=",
+  "Hash": "nRZ1sxVbm2dLSUM0pMjLbNJeX4YsKytFJd6rA4uxEGc=",
   "Source": "ESFE.Reserva.UI",
   "BasePath": "_content/ESFE.Reserva.UI",
   "Mode": "Default",
@@ -134,6 +134,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\doble3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\img\\habitacion7.jpg",
+      "SourceId": "ESFE.Reserva.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\",
+      "BasePath": "_content/ESFE.Reserva.UI",
+      "RelativePath": "img/habitacion7.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\habitacion7.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\img\\habitacion9.jpg",
+      "SourceId": "ESFE.Reserva.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\",
+      "BasePath": "_content/ESFE.Reserva.UI",
+      "RelativePath": "img/habitacion9.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\habitacion9.jpg"
     },
     {
       "Identity": "C:\\Users\\joanz\\dev\\contributions\\ESFE.Reserva\\ESFE.Reserva.UI\\wwwroot\\img\\Habitacionindividual.jpg",
